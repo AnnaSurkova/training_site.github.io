@@ -1,0 +1,29 @@
+.footer {
+    text-align: center;
+    height: 60px;
+    padding-left: calc(50% - 1300px /2);
+    padding-right: calc(50% - 1300px /2);
+    background: #213B7E;
+}
+
+.footer_text {
+    justify-content: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__link {
+    margin-left: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.5);
+}

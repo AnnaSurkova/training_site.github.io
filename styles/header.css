@@ -1,0 +1,233 @@
+.header {
+    background: #213B7E;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: calc(50% - 1268px /2);
+    padding-right: calc(50% - 1268px /2);
+    height: 80px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin-left: 54px;
+}
+
+.logo {
+    margin-top: 15px;
+}
+
+.menu_link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    padding: 29px 18px;
+    display: block;
+}
+
+.menu_link_activ {
+    background: #FFFFFF;
+    color: #213B7E;
+    text-decoration: none;
+    padding: 29px 18px;
+}
+
+.menu_link:hover {
+    background: #FFFFFF;
+    color: #213B7E;
+    text-decoration: none;
+    padding: 29px 18px;
+}
+
+.btn {
+    width: 153px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    background: #EA5D21;
+    color: #FFFFFF;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #808080;
+    transition-duration: 0.4s;
+}
+
+.popup_container {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.popup_container_opened {
+    display: flex;
+}
+
+
+.popup_bady {
+    margin: auto;
+    width: 500px;
+    height: 418px;
+    background: #FFFFFF;
+    border: 1px solid #213B7E;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+
+.popup_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 36px;
+}
+
+.popup_input {
+    display: block;
+    width: 444px;
+    height: 55px;
+    margin: 25px auto 0px auto;
+    background: #FFFFFF;
+    border: 1px solid #808080;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #808080;
+}
+
+.popup_button {
+    cursor: pointer;
+    width: 153px;
+    height: 50px;
+    margin-top: 56px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    color: #FFFFFF;
+    background: #EA6113;
+}
+
+.popup_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 21px;
+}
+
+@media (max-width: 1024px) {
+
+    /* для планшета */
+    .header {
+        padding-left: 32px;
+        padding-right: 32px;
+        height: 70px;
+    }
+
+    .menu {
+        margin-left: 0;
+    }
+
+    .menu_link {
+        font-size: 18px;
+        padding: 24px 16px;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+
+    /* для мобилки */
+    .header {
+        padding-left: 0px;
+        padding-right: 16px;
+        height: auto;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-left: 0px;
+    }
+
+    .menu_link {
+        font-size: 15px;
+        padding: 21px 13px;
+    }
+
+    .popup_bady {
+        width: 250px;
+        height: 209px;
+    }
+
+    .popup_text {
+        font-weight: 200;
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 18px;
+    }
+
+    .popup_input {
+        display: block;
+        width: 222px;
+        height: 28px;
+        margin: 12px auto 0px auto;
+        font-weight: 200;
+        font-size: 12px;
+        line-height: 14px;
+        color: #808080;
+    }
+
+    .popup_button {
+
+        width: 76px;
+        height: 25px;
+        margin-top: 28px;
+        font-weight: 200;
+        font-size: 9px;
+        line-height: 12px;
+    }
+
+
+    .popup_close {
+        top: 10px;
+        right: 10px;
+        font-size: 12px;
+    }
+
+}

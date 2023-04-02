@@ -1,0 +1,99 @@
+@import url(../styles/header.css);
+@import url(../styles/footer.css);
+@import url(../styles/layout.css);
+
+.section {
+    padding-left: calc(50% - 1268px /2);
+    padding-right: calc(50% - 1268px /2);
+}
+
+.contacts__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+    margin-top: 33px;
+    margin-bottom: 25px;
+    padding-left: 200px;
+}
+
+.maps {
+    width: 1268px;
+    height: 370px;
+}
+
+.contacts__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-left: 202px;
+}
+
+.contacts_info {
+    padding-left: calc(50% - 1268px /2);
+    padding-right: calc(50% - 1268px /2);
+    margin-left: 202px;
+    margin-bottom: 360px;
+}
+
+.address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    width: 439px;
+    height: 63px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+    /* для планшета */
+
+    .maps {
+        max-width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* для мобилки */
+
+    .contacts__title {
+        padding-left: 16px;
+    }
+
+    .contacts__text {
+        padding-left: 16px;
+      
+    }
+
+    .contacts_info {
+        margin-left: 10px;
+    }
+
+    .address {
+        max-width: 100%;
+    }
+
+    .address__text {
+        word-wrap: break-word;
+        width: 310px;
+    }
+
+    .maps {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: auto;
+    }
+}
